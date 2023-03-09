@@ -23,15 +23,18 @@
 }
 
 .intro{
-    height: 80vh;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .kat-img, .cpt-img{
     width: 100%;
-    height: 60vh;
-    
+    height: 50vh;
     object-fit: cover;
+}
+
+.cpt-img{
+    margin-top: 25px;
 }
 
 img{
@@ -67,7 +70,20 @@ hr{
     margin-bottom: 20px;
 }
 
-.hist img{
+.history-card img{
     float: right;
-    margin: 5px;
+    padding: 8px;
+    width: 65%;
+    height: max-content;
 }
+
+.history-card p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 712px) {  /* 540px */
+  .history-card img{
+    float: none;
+  } 
+}
+
